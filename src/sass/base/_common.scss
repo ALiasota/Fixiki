@@ -73,7 +73,5 @@ body {
 
   letter-spacing: 0.04em;
 
-  @include font(12, 500, 1.52);
-
-  padding-top: 60px;
+  @include font(12px, 500, 1.52);
 }

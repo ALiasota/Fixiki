@@ -1,0 +1,57 @@
+.about {
+  background-color: var(--bg-color-pink);
+  position: relative;
+}
+
+.about__pretitle {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.about__thumb__text {
+  padding: 0 30px;
+}
+
+.about__text {
+  margin-bottom: 47px;
+
+  line-height: 1.62;
+}
+
+.about__text__grey {
+  color: var(--second-color-text);
+}
+
+.about__btn {
+  padding: 0 37px;
+  height: 44px;
+
+  border-radius: var(--border-radius);
+
+  color: var(--accent-color);
+  background-color: var(--bg-color-white);
+  @include font(14px, 700, 1.3);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.btn__text {
+  margin-right: 17px;
+}
+
+.about__images {
+  position: absolute;
+
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 500ms linear;
+}
