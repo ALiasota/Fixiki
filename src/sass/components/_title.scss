@@ -1,5 +1,5 @@
-title {
-  @include font(34, 1.15, 400);
+.title {
+  @include font(34px, 400, 1.15);
 
   font-family: var(--second-font);
   text-transform: uppercase;
@@ -7,13 +7,11 @@ title {
   color: var(--accent-color);
 
   @media screen and (min-width: 768px) {
-    @include font(48, 1.15, 400);
+    @include font(48px, 400, 1.15);
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-
-    padding-left: 72px;
-    padding-right: 115px;
+    @include font(58px, 400, 1.14);
+    letter-spacing: 0.06em;
   }
 }

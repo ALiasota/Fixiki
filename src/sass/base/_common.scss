@@ -63,3 +63,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  background-color: var(--bg-color-white);
+  color: var(--first-color-text);
+
+  font-family: var(--accent-font);
+  font-style: normal;
+
+  letter-spacing: 0.04em;
+
+  @include font(12, 500, 1.52);
+
+  padding-top: 60px;
+}
