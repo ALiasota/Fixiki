@@ -1,0 +1,19 @@
+title {
+  @include font(34, 1.15, 400);
+
+  font-family: var(--second-font);
+  text-transform: uppercase;
+
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    @include font(48, 1.15, 400);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    padding-left: 72px;
+    padding-right: 115px;
+  }
+}
