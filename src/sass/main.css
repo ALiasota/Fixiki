@@ -10,8 +10,9 @@
 }
 
 *,
-* before,
-* after {
+*before,
+*after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -67,6 +68,18 @@ img {
   height: auto;
 }
 
+body {
+  background-color: var(--bg-color-white);
+  color: var(--first-color-text);
+  font-family: var(--accent-font);
+  font-style: normal;
+  letter-spacing: 0.04em;
+  font-size: 12;
+  font-weight: 500;
+  line-height: 1.52;
+  padding-top: 60px;
+}
+
 :root {
   --accent-color: #d41443;
   --second-color: #ffa5ba;
@@ -97,6 +110,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
@@ -104,6 +118,7 @@ img {
     padding-right: 20px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -111,6 +126,7 @@ img {
     padding-right: 34px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -127,6 +143,7 @@ img {
   text-transform: uppercase;
   color: var(--accent-color);
 }
+
 @media screen and (min-width: 768px) {
   .title {
     font-size: 48px;
@@ -134,6 +151,7 @@ img {
     line-height: 1.15;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 58px;
@@ -151,6 +169,7 @@ img {
   text-transform: uppercase;
   color: var(--second-color);
 }
+
 @media screen and (min-width: 768px) {
   .pretitle {
     font-size: 26px;
@@ -158,6 +177,7 @@ img {
     line-height: 1.15;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .pretitle {
     font-size: 58px;
@@ -165,4 +185,9 @@ img {
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.section--gallery {
+  background-color: var(--bg-color-pink, pink);
+}
+/*# sourceMappingURL=main.css.map */
