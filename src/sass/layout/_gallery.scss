@@ -1,7 +1,22 @@
 .section--gallery {
-  background-color: var(--bg-color-pink, pink);
+  background-image: linear-gradient(
+    to top,
+    var(--bg-color-white, white) 50%,
+    var(--bg-color-pink, pink) 50%
+  );
 }
 
 .container--grid {
-  // стили
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* ! Gallery Thumb */
+
+.gallery__thumb {
+}
+
+/* ! Gallery Images */
+
+.gallery__img {
 }

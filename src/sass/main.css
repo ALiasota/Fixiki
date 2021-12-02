@@ -188,6 +188,17 @@ body {
 }
 
 .section--gallery {
-  background-color: var(--bg-color-pink, pink);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, var(--bg-color-white, white)), color-stop(50%, var(--bg-color-pink, pink)));
+  background-image: linear-gradient(to top, var(--bg-color-white, white) 50%, var(--bg-color-pink, pink) 50%);
 }
+
+.container--grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+/* ! Gallery Thumb */
+/* ! Gallery Images */
 /*# sourceMappingURL=main.css.map */
