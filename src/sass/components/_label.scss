@@ -1,0 +1,18 @@
+.label {
+  @include font(18, 400, 1.17);
+
+  font-family: var(--second-font);
+  text-transform: uppercase;
+
+  color: var(--second-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(26, 400, 1.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(58, 500, 1.14);
+
+    letter-spacing: 0.06em;
+  }
+}
