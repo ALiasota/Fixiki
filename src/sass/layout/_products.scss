@@ -1,5 +1,9 @@
 .products__container {
   padding-bottom: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .products__label {display: block;
  text-align: center;
