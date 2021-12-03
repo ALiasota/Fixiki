@@ -1,6 +1,15 @@
 .about {
   background-color: var(--bg-color-pink);
   //position: relative;
+  padding-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 146px;
+  }
 }
 
 .about__container {
@@ -8,7 +17,7 @@
     background-image: url('../images/about/aboutbg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 80%;
+    background-position: 50% 90%;
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
