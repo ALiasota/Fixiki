@@ -19,23 +19,41 @@
     padding-right:50px ;
     padding-bottom: 20px;
     margin-bottom: 52px;
-}
+
+
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 15px;
+        width: 54px;
+        height: 40px;
+        background-image: url(/images/reviews/quote.png);
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 15px;
+        width: 54px;
+        height: 40px;
+        background-image: url(/images/reviews/ellips-icon.png);
+    }
+
+    }
+
 
 .reviews__text {
     position: relative;
     @include font(12px, 500, 2.5);
 }
 
-.reviews__wrapper::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 130px;
-    left: 15px;
-    width: 54px;
-    height: 40px;
-    background-image: url(/images/reviews/quote.png);
-}
+
+
+
 
 .reviews__name {
     margin-bottom: 30px;
