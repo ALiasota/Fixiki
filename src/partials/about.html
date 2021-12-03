@@ -1,10 +1,38 @@
 <section class="about">
-    <div class="container">
+    <div class=" about__container container">
         <p class="about__pretitle pretitle">tradition and love</p>
         <h2 class="about__title title">how it’s made?</h2>
         <div>
             <div>
-                <img>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="
+                                                      ./images/about/cowDesktop.webp    1x,
+                                                      ./images/about/cowDesktop2.webp 2x
+                                                    " type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="
+                                                      ./images/about/cowDesktop.jpg 1x,
+                                                      ./images/about/cowDesktop.jpg 2x
+                                                    " />
+                
+                    <source media="(min-width: 768px)" srcset="
+                                                      ./images/about/cowTablet.webp    1x,
+                                                      ./images/about/cowTablet@2.webp 2x
+                                                    " type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="
+                                                      ./images/about/cowTablet.jpg    1x,
+                                                      ./images/about/cowTablet@2.jpg 2x
+                                                    " />
+                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/about/cowPhone.webp    1x,
+                                                        ./images/about/cowPhone@2.webp 2x
+                                                                        " type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/about/cowPhone.jpg    1x,
+                                                        ./images/about/cowPhone@2.jpg 2x
+                                                                        " />
+                
+                    <img src="#" alt='cow' class='about__images'>
+                </picture>
             </div>
             <div class="about__thumb__text">
                 <p class='about__text'>
@@ -31,8 +59,7 @@
                 </button>
                 
             </div>
-            
-        </div>
+            </div>
     </div>
-    <img class="about__images" width='320' height='150' src='./images/about/aboutbg.png'>
+    <!--<img class="about__images" width='320' height='150' src='./images/about/aboutbg.png'>-->
 </section>

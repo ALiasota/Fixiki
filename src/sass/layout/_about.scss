@@ -1,8 +1,6 @@
 .about {
   background-color: var(--bg-color-pink);
   //position: relative;
-
-  
 }
 
 .about__pretitle {
@@ -17,6 +15,30 @@
 
 .about__thumb__text {
   padding: 0 30px;
+}
+
+.about__container {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: url('./images/about/aboutbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 80%;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/aboutbg@2.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/about/about1200.png');
+    max-width: 1600px;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/about1200@2.png');
+    }
+  }
 }
 
 .about__text {
