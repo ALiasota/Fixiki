@@ -1,0 +1,63 @@
+<header class="header">
+    <div class="container">
+        <div data-wind class="header__menu-btn-cont">
+            <button 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button type="button" class="mobile-nav__menu-btn">
+                    <span class="mobile-nav__menu-icon"></span>
+                    <span class="mobile-nav__close-icon"></span>
+             </button>
+        </div>
+        <div data-wind class="header__cont-rel">           
+            
+            <div class="circle"></div>
+            <div class="header__picture-cont">
+                <picture>
+                <source media="(max-width: 768px)" srcset="
+                                                  ./images/hero/icecream-hero-mobile-png.png    1x,
+                                                  ./images/hero/icecream-hero-mobile-png@2x.png 2x
+                                                " />
+                <img class="header__picture" src="#" alt="icecream" />
+                </picture>
+                
+            </div>
+        
+        <nav>            
+            
+            <div class="header__logo-cont">
+                <picture>               
+                <source media="(max-width: 768px)" srcset="
+                                  ./images/hero/logo-mobile-png.png    1x,
+                                  ./images/hero/logo-mobile-png@2x.png 2x
+                                " />            
+                <img class="header__logo" src="#" alt="LOGO" />
+            </picture>
+           
+            
+            </div>               
+                
+        </nav>
+        
+        <h1 class="header__title">Ice cream made with <span class="header__title--bigger">passion</span></h1>
+        <button class="header__btn header__btn--red" type="button">Products</button>
+        <button class="header__btn header__btn--white" type="button">How it’s made?</button>
+            
+            
+    </div>
+    <div data-menu id="menu-container" class="mobile-nav">
+        <button data-modal-open type="button" class="mobile-nav__btn-buy">Buy now
+            <svg class="btn__icon-header" width="8" height="10">
+                <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg></button>
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link mobile-nav__link--red">Home</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">About us</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">How it’s made?</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Our products</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </div>
+    </div>   
+        
+</header>

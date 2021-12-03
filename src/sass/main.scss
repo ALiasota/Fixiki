@@ -2,7 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './utils/mixins';
+
 // Стили для файла с примером HTML-фрагмента
 @import './utils/mixins';
 @import './base/common';
@@ -10,8 +10,10 @@
 @import './utils/visually-hidden';
 @import './components/container';
 @import './components/title';
+@import './layout/header';
+@import './components/mobile-menu';
+@import './components/menu';
 @import './components/pretitle';
-@import './layout/hero';
 @import './layout/about';
 @import './layout/gallery';
 //@import './layout/advantages';
