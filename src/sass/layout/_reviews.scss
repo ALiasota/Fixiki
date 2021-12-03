@@ -8,13 +8,16 @@
 }
 
 .reviews__item {
-
+    position: relative;
     text-align: center;
 }
 
 .reviews__wrapper {
     background-color: #FAFAFA;
-
+    padding-top: 28px;
+    padding-left: 50px;
+    padding-right:50px ;
+    padding-bottom: 20px;
     margin-bottom: 52px;
 }
 
@@ -23,15 +26,20 @@
     @include font(12px, 500, 2.5);
 }
 
-.reviews__name {
+.reviews__wrapper::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    z-index: -10;
+    width: 54px;
+    height: 40px;
+    background-image: url(/images/reviews/quote.png);
+}
 
+.reviews__name {
     margin-bottom: 30px;
     @include font(14px, 500, 1.8);
     text-align: center;
-}
-
-.reviews__item:before {
-    content: " ";
-    
-    background-image: url(../../images/reviews/quote.png);
 }
