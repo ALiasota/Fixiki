@@ -1,6 +1,10 @@
 .products__container {
 }
-.products__pretitle {
+.products__label {display: block;
+ text-align: center;
+}
+.products__title{
+  text-align: center;
 }
 
 .products__card {
@@ -11,6 +15,7 @@
   height: 485px;
   border-radius: 24px;
   padding-top: 161px;
+   text-align: center;
 
 
 }
@@ -24,10 +29,25 @@ background: var(--color-cream);
 background: var(--color-light-green);
 }
 
-.products__title {margin-bottom: 66px;
+.products__name {margin-bottom: 66px;
   align-content: center;
   text-align: center;
 }
+.products__name--pink{
+// &::before{
+//     content: '';
+//    display: block;
+//     width: 249px;
+//     height: 252px;
+//     border-radius: 2px;
+//     background-image: url("/src/images/prod/prodm1.png");
+// }
+}
+.products__name--cream{
 
+}
+.products__name--green{
+
+}
 .products__description {
 }
