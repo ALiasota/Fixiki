@@ -1,0 +1,29 @@
+.block-items {
+    cursor: default;
+}
+
+.inner-testimonial {
+    text-align: center;
+    background-color: #fff;
+}
+
+.inner-testimonial__image{
+    max-width: 128px;
+    margin:0 auto 15px;
+    opacity: 0;
+    -webkit-transition:all 1.3s linear;
+    transition:all 1.3s linear;
+}
+
+/*Данные классы используются только в активном 
+пункте слайдера, который сейчас виден*/
+.owl-item.active .inner-testimonial__image{
+    -webkit-transition:all 1.3s linear;
+    transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial__image.full-opacity {
+    opacity:1;
+    -webkit-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
