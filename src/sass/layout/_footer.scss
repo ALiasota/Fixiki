@@ -41,25 +41,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--bg-color-white);
-    background: #FEA5BB;
+    color: #FEA5BB;
+    
     transition: background-color $transition,
     color $transition;
     margin-bottom: 46px;
     margin-top: 43px;
-
-    &:hover, 
-    &:focus{
-        background-color: var(--accent-color);
-        color: var(--bg-color-white);
-    }
 }
 .footer__icon{
     fill: currentColor;
 
     .footer__social-link:hover &,
     .footer__social-link:focus &{
-        fill: var(--bg-color-white);
+        fill: currentColor;
+        color: var(--accent-color);
     }
     
 }
