@@ -12,7 +12,11 @@
         "components/_pretitle.scss",
         "layout/_hero.scss",
         "layout/_gallery.scss",
+
+        "layout/_products.scss"
+
         "layout/_advantages.scss"
+
     ],
     "names": [],
     "file": "main.css"
