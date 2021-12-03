@@ -11,7 +11,8 @@
         "components/_title.scss",
         "components/_label.scss",
         "layout/_hero.scss",
-        "layout/_gallery.scss"
+        "layout/_gallery.scss",
+        "layout/_products.scss"
     ],
     "names": [],
     "file": "main.css"
