@@ -22,7 +22,7 @@
 }
 
 .reviews__text {
-
+    position: relative;
     @include font(12px, 500, 2.5);
 }
 
@@ -32,7 +32,6 @@
     position: absolute;
     top: 130px;
     left: 15px;
-    z-index: -10;
     width: 54px;
     height: 40px;
     background-image: url(/images/reviews/quote.png);
