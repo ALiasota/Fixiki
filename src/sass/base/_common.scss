@@ -1,3 +1,15 @@
+body {
+  background-color: var(--bg-color-white);
+  color: var(--first-color-text);
+
+  font-family: var(--accent-font);
+  font-style: normal;
+
+  letter-spacing: 0.04em;
+}
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 * {
   padding: 0;
   margin: 0;
@@ -73,7 +85,5 @@ body {
 
   letter-spacing: 0.04em;
 
-  @include font(12, 500, 1.52);
-
-  padding-top: 60px;
+  @include font(12px, 500, 1.52);
 }
