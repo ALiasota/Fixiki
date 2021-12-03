@@ -14,8 +14,16 @@
         "components/_pretitle.scss",
         "layout/_about.scss",
         "layout/_gallery.scss",
+
         "layout/_advantages.scss",
         "layout/_footer.scss"
+
+
+        "layout/_products.scss"
+
+        
+
+
     ],
     "names": [],
     "file": "main.css"
