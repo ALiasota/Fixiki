@@ -26,6 +26,12 @@
 .reviews__name {
 
     margin-bottom: 30px;
-@include font(14px, 500, 1.8);
-text-align: center;
+    @include font(14px, 500, 1.8);
+    text-align: center;
+}
+
+.reviews__item:before {
+    content: " ";
+    
+    background-image: url(../images/reviews/quote.png);
 }
