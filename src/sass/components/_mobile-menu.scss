@@ -34,7 +34,7 @@
   border-radius: 22px;
   background-color: var(--bg-color-white);
   color: var(--accent-color);
-  @include font(16, 600, 1.31);
+  @include font(16px, 600, 1.31);
 
   transition: background-color $transition;
   &:hover,
@@ -115,7 +115,7 @@
 
 .mobile-nav__link {
   color: var(--bg-color-white);
-  @include font(14, 600, 1.29);
+  @include font(14px, 600, 1.29);
 
   &.mobile-nav__link--red {
     color: var(--accent-color);
