@@ -4,9 +4,8 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
   }
