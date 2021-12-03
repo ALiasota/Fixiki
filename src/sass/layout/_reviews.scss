@@ -1,12 +1,31 @@
 .reviews__image {
     display: inline-block;
+
+    margin-bottom: 29px;
+
+    width: 85px;
+    height: 85px;
 }
 
 .reviews__item {
-    
+
     text-align: center;
 }
 
 .reviews__wrapper {
-    background-color: #FAFAFA;;
+    background-color: #FAFAFA;
+
+    margin-bottom: 52px;
+}
+
+.reviews__text {
+
+    @include font(12px, 500, 2.5);
+}
+
+.reviews__name {
+
+    margin-bottom: 30px;
+@include font(14px, 500, 1.8);
+text-align: center;
 }
