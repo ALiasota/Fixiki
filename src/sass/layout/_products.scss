@@ -1,0 +1,33 @@
+.products__container {
+}
+.products__pretitle {
+}
+
+.products__card {
+}
+
+.products__item {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+  padding-top: 161px;
+
+
+}
+.products__item--pink{
+background: var(--color-pink);
+}
+.products__item--cream{
+background: var(--color-cream);
+}
+.products__item--green{
+background: var(--color-light-green);
+}
+
+.products__title {margin-bottom: 66px;
+  align-content: center;
+  text-align: center;
+}
+
+.products__description {
+}
