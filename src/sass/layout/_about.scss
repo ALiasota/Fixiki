@@ -1,6 +1,8 @@
 .about {
   background-color: var(--bg-color-pink);
-  position: relative;
+  //position: relative;
+
+  
 }
 
 .about__pretitle {
@@ -50,7 +52,7 @@
 .about__images {
   position: absolute;
 
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
+  //bottom: 0;
+  //left: 50%;
+  //transform: translate(-50%, -50%) rotate(0deg);
 }
