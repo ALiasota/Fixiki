@@ -78,13 +78,7 @@
     line-height: 1.86;
 
     text-align: right;
-    color: var(--first-color-text);
-    transition: color $transition;
-    
-    &:hover,
-    &:focus{
-        color: var(--accent-color);
-    }
+    color: var(--accent-color);
 }
 
 .footer__text{
