@@ -25,6 +25,7 @@
   @media screen and (min-width: 1200px) {
   }
 }
+
 .advantages-list__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -44,6 +45,7 @@
     }
   }
 }
+
 .advantages-list__icon {
   margin-bottom: 16px;
 
@@ -62,10 +64,24 @@
 
 .advantages-list__description {
 }
-.title {
+
+.advantages-list__title {
+  font-family: var(--second-font);
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
   margin-bottom: 13px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
   @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
     margin-bottom: 15px;
   }
 }
