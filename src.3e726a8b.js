@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/prod/prodm1.png":[["prodm1.485e1b5a.png","ugel"],"ugel"],"./../images/point3.png":[["point3.5bada95c.png","rqgH"],"rqgH"],"./../images/prod/prodm2.png":[["prodm2.9f85da28.png","K2Vm"],"K2Vm"],"./../images/prod/prodm3.png":[["prodm3.60e9f269.png","ZFtt"],"ZFtt"],"./../images/about/aboutbg.png":[["aboutbg.d6fa2f7d.png","QSlO"],"QSlO"],"./../images/about/aboutbg@2.png":[["aboutbg@2.200f4807.png","ePaS"],"ePaS"],"./../images/about/about1200.png":[["about1200.548448c4.png","eQhx"],"eQhx"],"./../images/about/about1200@2.png":[["about1200@2.69d726d8.png","ctUf"],"ctUf"],"/home/runner/work/Fixiki/Fixiki/src/images/reviews/quote.png":[["quote.7652c3c3.png","Btcx"],"Btcx"],"/home/runner/work/Fixiki/Fixiki/src/images/reviews/ellips-icon.png":[["ellips-icon.8979c218.png","tc0T"],"tc0T"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Fixiki/src.9bc1b533.js.map
+//# sourceMappingURL=/Fixiki/src.3e726a8b.js.map
