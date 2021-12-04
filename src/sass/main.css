@@ -727,10 +727,6 @@ nav {
   }
 }
 
-.icon {
-  outline: 1px solid tomato;
-}
-
 .advantages-list__title {
   font-family: var(--second-font);
   font-size: 36px;
