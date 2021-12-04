@@ -35,10 +35,15 @@
 }
 
 
-.reviews__text {
+.reviews__text--underline {
     position: relative;
     @include font(12px, 500, 2.5);
+    background: linear-gradient(to right, #E1E1E1, #E1E1E1 100%);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
 }
+
 
 
 .reviews__wrapper::after {
