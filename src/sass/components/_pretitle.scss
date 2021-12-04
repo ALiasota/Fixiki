@@ -11,8 +11,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    @include font(58px, 500, 1.14);
-
-    letter-spacing: 0.06em;
+    @include font(30px, 400, 1.06);
   }
 }
