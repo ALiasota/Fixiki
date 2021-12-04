@@ -1,20 +1,27 @@
 .header {
+  display: flex;
+  justify-content: center;
   background-color: #ffb8ca;
   height: 502px;
 }
 
+.header__cont {
+  margin-right: 0;
+}
 .header__cont-rel {
   position: relative;
+  margin-right: -20px;
   z-index: 10;
   height: 502px;
   padding-top: 6px;
+  overflow: hidden;
 }
 
 .circle {
   position: absolute;
   z-index: -2;
   top: 83px;
-  left: 16px;
+  left: 36px;
   width: 346px;
   height: 346px;
   background-color: #ffa5ba;
@@ -25,7 +32,7 @@
   position: absolute;
   z-index: -1;
   bottom: 0;
-  left: 97px;
+  left: 117px;
 
   animation-name: icecream;
   animation-duration: 1000ms;
