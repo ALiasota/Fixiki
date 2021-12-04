@@ -62,19 +62,36 @@
 
 .advantages-list__description {
 }
+
 .advantages-list__title {
+  font-family: var(--second-font);
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
   margin-bottom: 13px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
   @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
     margin-bottom: 15px;
   }
 }
+
 .advantages-list__text {
-  max-width: 230;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--first-color-text);
+  @media screen and (max-width: 479px) {
+    max-width: 230;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--first-color-text);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
