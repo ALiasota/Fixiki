@@ -1,8 +1,13 @@
 .contacts {
-  padding-top: 83px;
+  // padding-top: 83px;
   padding-bottom: 83px;
-  // background: linear-gradient(#ffffff, #fff5f6);
   background-color: #fff5f6;
+  background-image: linear-gradient(#ffffff, );
+  background-image: linear-gradient(
+    to top,#fff5f6 
+     5%,
+    var(--bg-color-white) 95%
+  );
 }
 .contacts__list {
   margin-bottom: 54px;
