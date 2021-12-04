@@ -1,0 +1,76 @@
+.reviews__image {
+    display: inline-block;
+
+    margin-bottom: 29px;
+
+    width: 85px;
+    height: 85px;
+}
+
+.reviews__item {
+    position: relative;
+    text-align: center;
+}
+
+.reviews__wrapper {
+    background-color: #FAFAFA;
+    padding-top: 28px;
+    padding-left: 50px;
+    padding-right:50px ;
+    padding-bottom: 20px;
+    margin-bottom: 52px;
+
+
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 20px;
+        width: 54px;
+        height: 40px;
+        background-image: url(/images/reviews/quote.png);
+    }
+
+}
+
+
+.reviews__text--underline {
+    position: relative;
+    @include font(12px, 500, 2.5);
+    background: linear-gradient(to right, #E1E1E1, #E1E1E1 100%);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
+
+
+.reviews__wrapper::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 400px;
+    left: 120px;
+    width: 32px;
+    height: 4px;
+    background-image: url(/images/reviews/ellips-icon.png);
+    @media screen and (min-width: 768px) {
+        top: 250px;
+        left: 332px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 250px;
+        left: 488px;
+    }
+}
+
+
+
+
+.reviews__name {
+    margin-bottom: 30px;
+    @include font(14px, 500, 1.8);
+    text-align: center;
+}
