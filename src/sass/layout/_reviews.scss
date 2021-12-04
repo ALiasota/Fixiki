@@ -8,7 +8,7 @@
 }
 
 .reviews__item {
-    //position: relative;
+    position: relative;
     text-align: center;
 }
 
@@ -34,31 +34,52 @@
 
 }
 
-.reviews__text::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 130px;
-    left: 15px;
-    width: 54px;
-    height: 40px;
-    background-image: url(/images/reviews/quote.png);
-}
+
 .reviews__text {
     position: relative;
     @include font(12px, 500, 2.5);
 }
 
 
-.reviews__text::after {
+.reviews__name::before {
     content: " ";
+    position: absolute;
     display: block;
-    top: 250px;
-    left: 332px;
-    width: 32px;
+    top: 404px;
+    left: 122px;
     height: 4px;
     background-image: url(/images/reviews/ellips-icon.png);
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        top: 250px;
+        left: 332px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        top: 250px;
+        left: 332px;
+      }
+}
+.reviews__wrapper::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 404px;
+    left: 122px;
+    height: 4px;
+    background-image: url(/images/reviews/ellips-icon.png);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        top: 250px;
+        left: 332px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        top: 250px;
+        left: 332px;
+      }
 }
 
 
