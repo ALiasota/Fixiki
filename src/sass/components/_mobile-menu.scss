@@ -20,6 +20,10 @@
   transition: opacity $transition;
   transition: transform $transition;
 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
   &.is-open {
     transform: translateX(0);
     opacity: 1;
@@ -28,11 +32,12 @@
   }
 }
 
-.mobile-nav__btn-buy {
+.mobile-nav__btn-buy {  
   width: 186px;
   height: 44px;
   margin: 0 auto 19px auto;
   border-radius: 22px;
+  
   
   
   @include font(16px, 600, 1.31);
@@ -53,6 +58,10 @@
   position: relative;
   max-width: 480px;
   z-index: 11;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .mobile-nav__menu-btn {
@@ -61,6 +70,13 @@
   right: 0;
   top: 21px;
   background: #ffb8ca;
+
+  @media screen and (min-width: 768px) {
+    right: 190px;
+    top: 47px;
+    background: #FFA5BA;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -267,7 +283,7 @@
     border-color: transparent;
     transform: scale(1);
     background: var(--accent-color);
-    background-image: url('../images/hero/check-svg.svg');
+    // background-image: url('../../images/hero/check-svg.svg');
     background-origin: border-box;
     background-size: contain;
     background-position: center;

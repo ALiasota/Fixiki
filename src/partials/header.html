@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container header__cont">
+  <div class="container header__cont">    
     <div data-wind class="header__menu-btn-cont">
       <button
         aria-expanded="false"
@@ -89,6 +89,14 @@
             <img class="header__logo" src="#" alt="LOGO" />
           </picture>
         </div>
+        <button  type="button" class="mobile-nav__btn-buy header__btn-buy">        
+          <a href="" data-modal="#modal1" class="modal__trigger mobile-nav__btn-link">
+          Buy now
+           <svg class="btn__icon-header" width="8" height="10">
+             <use href="./images/sprite.svg#icon-arrow"></use>
+           </svg>
+         </a>        
+        </button>
       </nav>
 
       <h1 class="header__title">
@@ -98,26 +106,8 @@
         <button class="header__btn header__btn--red" type="button"><a class="header__btn-link" href="#products">Products</a></button>
         <button class="header__btn header__btn--white" type="button"><a class="header__btn-link" href="#made">How it’s made?</a></button>
       </div>
-    </div>
-    <div data-menu id="menu-container" class="mobile-nav">
-      <button  type="button" class="mobile-nav__btn-buy">        
-         	<a href="" data-modal="#modal1" class="modal__trigger mobile-nav__btn-link">
-             Buy now
-              <svg class="btn__icon-header" width="8" height="10">
-                <use href="./images/sprite.svg#icon-arrow"></use>
-              </svg>
-            </a>        
-      </button>
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav__item">
-          <a href="" class="mobile-nav__link mobile-nav__link--red">Home</a>
-        </li>
-        <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">About us</a></li>
-        <li class="mobile-nav__item"><a href="#made" class="mobile-nav__link">How it’s made?</a></li>
-        <li class="mobile-nav__item"><a href="#products" class="mobile-nav__link">Our products</a></li>
-        <li class="mobile-nav__item"><a href="#contacts" class="mobile-nav__link">Contact</a></li>
-      </ul>
-    </div>
+    </div>  
+    
   </div>
   
   <div id="modal1" class="modal modal__bg" role="dialog" aria-hidden="true">
@@ -140,11 +130,7 @@
                               <input 
                               type="text" 
                               class="modal__inp modal-border" 
-                              name="user-name"
-                              minlength="2"
-                              pattern="[a-zA-Zа-яёА-ЯЁ]+"
-                              title="Имя должно содержать символы кириллицы или латиницы"
-                              required 
+                              name="user-name"                             
                               placeholder=" " 
                               autofocus                        
                               >
@@ -161,9 +147,7 @@
                               </span>
                               <input 
                               type="tel" 
-                              class="modal__inp modal-border" name="tel"
-                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                              title="099-000-00-00"                        
+                              class="modal__inp modal-border" name="tel"                                                     
                               placeholder=" ">
                           </span>
                           
@@ -183,6 +167,7 @@
                            </svg>
                                 
                    </button>
+                   
                   </form>                  
               </div>
             
