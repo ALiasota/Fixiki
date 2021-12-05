@@ -94,11 +94,14 @@
       <h1 class="header__title">
         Ice cream made with <span class="header__title--bigger">passion</span>
       </h1>
-      <button class="header__btn header__btn--red" type="button">Products</button>
-      <button class="header__btn header__btn--white" type="button">How it’s made?</button>
+      <div>
+        <button class="header__btn header__btn--red" type="button"><a class="header__btn-link" href="#products">Products</a></button>
+        <button class="header__btn header__btn--white" type="button"><a class="header__btn-link" href="#made">How it’s made?</a></button>
+      </div>
     </div>
     <div data-menu id="menu-container" class="mobile-nav">
-      <button data-modal-open type="button" class="mobile-nav__btn-buy">
+      <button  type="button" class="mobile-nav__btn-buy">
+        <!-- data-modal-open -->
         Buy now
         <svg class="btn__icon-header" width="8" height="10">
           <use href="./images/sprite.svg#icon-arrow"></use>
@@ -108,10 +111,10 @@
         <li class="mobile-nav__item">
           <a href="" class="mobile-nav__link mobile-nav__link--red">Home</a>
         </li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">About us</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">How it’s made?</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Our products</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Contact</a></li>
+        <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">About us</a></li>
+        <li class="mobile-nav__item"><a href="#made" class="mobile-nav__link">How it’s made?</a></li>
+        <li class="mobile-nav__item"><a href="#products" class="mobile-nav__link">Our products</a></li>
+        <li class="mobile-nav__item"><a href="#contacts" class="mobile-nav__link">Contact</a></li>
       </ul>
     </div>
   </div>
