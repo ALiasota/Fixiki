@@ -2,6 +2,8 @@
     background-color: var(--bg-color-pink);
     max-width: 100%;
     max-height: auto;
+    padding-top: 58px;
+    padding-bottom: 25px;
 }
 
 .footer__title{
@@ -43,13 +45,13 @@
     border-radius: 50%;
     color: #FEA5BB;
     
-    transition: background-color $transition,
-    color $transition;
-    margin-bottom: 46px;
-    margin-top: 43px;
+
+    padding-bottom: 46px;
+    padding-top: 43px;
 }
 .footer__icon{
     fill: currentColor;
+    transition: color $transition;
 
     .footer__social-link:hover &,
     .footer__social-link:focus &{
@@ -89,7 +91,7 @@
 
     text-align: center;
     color: var(--second-color-text);
-    margin-top: 22px;
+    padding-top: 22px;
 }
 
 
