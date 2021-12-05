@@ -85,7 +85,7 @@
   padding-right: 14px;
   border-radius: 20px;
   @include font(8px, 400, 1.25);
-  transition: background-color $transition;
+  transition: background-color $transition;  
 
   &--red {
     background-color: var(--accent-color);
@@ -96,7 +96,7 @@
     &:focus {
       background-color: #c7133e;
       cursor: pointer;
-    }
+    }    
   }
 
   &--white {
@@ -109,6 +109,10 @@
       cursor: pointer;
     }
   }
+}
+
+.header__btn-link {
+  color: inherit;
 }
 
 .btn__icon-header {
