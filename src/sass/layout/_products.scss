@@ -1,5 +1,9 @@
+.section-products{
+  padding-top: 121px;
+    padding-bottom: 98px;
+}
 .products__container {
-  padding-bottom: 98px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,12 +11,12 @@
 }
 .products__label {display: block;
  text-align: center;
- padding-top: 121px;
- padding-bottom: 15px;
+
+ margin-bottom: 15px;
 }
 .products__title{
   text-align: center;
-  padding-bottom: 144px;
+  margin-bottom: 144px;
 }
 
 .products__card {
@@ -25,7 +29,9 @@
 align-items: center;
    text-align: center;
    justify-content: center;
-
+   padding-left: 41px;
+   padding-right: 39px;
+padding-top: 161px;
 
 }
 .products__item--pink{
@@ -57,11 +63,11 @@ color: var(--bg-color-white);
 }
 .products__name--pink{
   position: relative;
-  padding-top: 161px;
+  // padding-top: 161px;
 &::before{
   position: absolute;
-  top: -113px;
-  right: 16px;
+bottom: 45px;
+  right: -23px;
     content: '';
    display: block;
     width: 249px;
@@ -70,7 +76,7 @@ color: var(--bg-color-white);
 }
 &::after{
   position: absolute;
-  right: 127px;
+  right: 87px;
 bottom: -30px;
    content: '';
    display: block;
@@ -80,11 +86,11 @@ bottom: -30px;
 }
 }
 .products__name--cream{position: relative;
-  padding-top: 161px;
+
 &::before{
   position: absolute;
-  top: -113px;
-  right: 16px;
+  bottom: 45px;
+  right: -23px;
     content: '';
    display: block;
     width: 249px;
@@ -93,7 +99,7 @@ bottom: -30px;
 }
 &::after{
   position: absolute;
-  right: 127px;
+   right: 87px;
 bottom: -30px;
    content: '';
    display: block;
@@ -104,12 +110,12 @@ bottom: -30px;
 
 }
 .products__name--green{position: relative;
-  padding-top: 161px;
+
 
 &::before{
   position: absolute;
-  top: -113px;
-  right: 16px;
+ bottom: 45px;
+  right: -23px;
     content: '';
    display: block;
     width: 249px;
@@ -118,7 +124,7 @@ bottom: -30px;
 }
 &::after{
   position: absolute;
-  right: 127px;
+   right: 87px;
 bottom: -30px;
    content: '';
    display: block;
@@ -134,10 +140,10 @@ font-size: 14px;
 line-height: 1.52;
 letter-spacing: 0.04em;
   color: var(--bg-color-white);
-  padding-left: 41px;
-  padding-right: 39px;
+  // padding-left: 41px;
+  // padding-right: 39px;
   font-family: var(--accent-font);
-  padding-bottom: 30px;
+ margin-bottom: 30px;
 }
 
 .products-button{
@@ -206,6 +212,7 @@ display: block;
 .backdrop{
    position: absolute;
     top: 0;
+    left: 0;
 }
 
 .hiddeng{
