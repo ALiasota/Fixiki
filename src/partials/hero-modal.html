@@ -1,0 +1,55 @@
+
+    <div data-modal class="modal__backdrop is-hidden" >
+        <div class="modal__window">
+            <h3 class="modal_header">Buy Isecream</h3>         
+
+                <img src='./images/about/modalCow2.png' width="200" height="200" alt="cow&milk" class='modal-img'>
+                
+
+                    <form autocomplete="off" class="modal__form">
+                        <label class="modal__label">Имя
+                            <span class="modal__input-cont">
+                                <span class="modal__svg-cont">
+                                    <svg class="modal__svg">
+                                        <use href="./images/sprite.svg#icon-name-svg"></use>
+                                    </svg>
+                                </span>
+                                <input type="text" class="modal__inp modal-border" name="user-name" placeholder=" "
+                                    autofocus>
+                            </span>
+
+                        </label>
+
+                        <label class="modal__label">Телефон
+                            <span class="modal__input-cont">
+                                <span class="modal__svg-cont">
+                                    <svg class="modal__svg">
+                                        <use href="./images/sprite.svg#icon-tel-svg"></use>
+                                    </svg>
+                                </span>
+                                <input type="tel" class="modal__inp modal-border" name="tel" placeholder=" ">
+                            </span>
+
+                        </label>
+
+                        <label class="modal__checkbox">
+                            <input type="checkbox" class="modal__checkbox--hidden" name="agry">
+                            <span class="modal__checkbox-icon"></span>
+                            <span>Confirm</span>
+                        </label>
+
+                        <button type="submit" class="mobile-nav__btn-buy mobile-nav__btn-buy--red">
+
+                            Buy now
+                            <svg class="btn__icon-header" width="8" height="10">
+                                <use href="./images/sprite.svg#icon-arrow"></use>
+                            </svg>
+
+                        </button>
+
+                    </form> 
+                    <button data-modal-close class="modal__btn-close" type="button">
+                        <span class="mobile-nav__close-icon"></span>
+                    </button>
+        </div>
+    </div>
