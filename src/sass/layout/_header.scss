@@ -3,20 +3,28 @@
   justify-content: center;
   background-color: #ffb8ca;
   height: 502px;
-
   overflow-x: hidden;
 }
 
-.header__cont {
-  // margin-right: 0;
-}
+
 .header__cont-rel {
-  position: relative;
-  // margin-right: -20px;
+  position: relative;  
   z-index: 10;
   height: 502px;
-  padding-top: 6px;
-  // overflow: hidden;
+  padding-top: 6px; 
+
+  @media screen and (min-width: 768px) {
+   padding-top: 37px;
+  }
+}
+
+.mobile-nav__btn-buy.header__btn-buy {
+  
+  @media screen and (max-width: 767px) {
+    display: none;
+   }
+  width: 160px;
+  margin: 0;
 }
 
 .circle {
@@ -28,6 +36,15 @@
   height: 346px;
   background-color: #ffa5ba;
   border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    top: 31px;
+  left: 273px;
+  width: 324px;
+  height: 324px;
+  background-color: #ffa5ba;
+  border-radius: 50%;
+  }
 }
 
 .header__picture-cont {
@@ -85,7 +102,7 @@
   padding-right: 14px;
   border-radius: 20px;
   @include font(8px, 400, 1.25);
-  transition: background-color $transition;
+  transition: background-color $transition;  
 
   &--red {
     background-color: var(--accent-color);
@@ -96,7 +113,7 @@
     &:focus {
       background-color: #c7133e;
       cursor: pointer;
-    }
+    }    
   }
 
   &--white {
@@ -111,6 +128,13 @@
   }
 }
 
+.header__btn-link {
+  color: inherit;
+}
+
 .btn__icon-header {
   margin-left: 16px;
+  @media screen and (min-width: 768px) {
+    margin-left: 9px;
+  }
 }

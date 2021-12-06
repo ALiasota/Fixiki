@@ -20,6 +20,10 @@
   transition: opacity $transition;
   transition: transform $transition;
 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
   &.is-open {
     transform: translateX(0);
     opacity: 1;
@@ -28,13 +32,14 @@
   }
 }
 
-.mobile-nav__btn-buy {
+.mobile-nav__btn-buy {  
   width: 186px;
   height: 44px;
   margin: 0 auto 19px auto;
   border-radius: 22px;
-  background-color: var(--bg-color-white);
-  color: var(--accent-color);
+  
+  
+  
   @include font(16px, 600, 1.31);
 
   transition: background-color $transition;
@@ -45,10 +50,18 @@
   }
 }
 
+.mobile-nav__btn-link {
+  color: var(--accent-color);
+}
+
 .header__menu-btn-cont {
   position: relative;
   max-width: 480px;
   z-index: 11;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .mobile-nav__menu-btn {
@@ -57,8 +70,46 @@
   right: 0;
   top: 21px;
   background: #ffb8ca;
+
+  @media screen and (min-width: 768px) {
+    right: 190px;
+    top: 47px;
+    background: #FFA5BA;
+  }
+
   &:hover {
     cursor: pointer;
+  }
+}
+
+
+.mobile-nav__menu-icon {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: opacity $transition;
+
+  &:before,
+  &:after {
+    position: absolute;
+    right: 0;
+    content: ' ';
+    height: 2px;
+    width: 20px;
+    background-color: var(--accent-color);
+  }
+  &:before {
+    bottom: 6px;
+  }
+  &:after {
+    top: 6px;
+  }
+
+  .header__menu-btn-cont.wind-open & {
+    opacity: 0;
   }
 }
 
@@ -91,36 +142,6 @@
   }
 }
 
-.mobile-nav__menu-icon {
-  position: absolute;
-  top: 9px;
-  right: 0;
-  width: 20px;
-  height: 2px;
-  background-color: var(--accent-color);
-  transition: opacity $transition;
-
-  &:before,
-  &:after {
-    position: absolute;
-    right: 0;
-    content: ' ';
-    height: 2px;
-    width: 20px;
-    background-color: var(--accent-color);
-  }
-  &:before {
-    bottom: 6px;
-  }
-  &:after {
-    top: 6px;
-  }
-
-  .header__menu-btn-cont.wind-open & {
-    opacity: 0;
-  }
-}
-
 .mobile-nav__list {
   display: block;
   width: 100%;
@@ -140,5 +161,148 @@
 
   &.mobile-nav__link--red {
     color: var(--accent-color);
+  }
+}
+
+
+
+.modal__window {
+   
+}
+
+
+
+.modal__form {
+  display: block;
+}
+
+.modal__label {
+  display: block;
+  @include font(10px, 400, 1.25);
+  color: var(--accent-color);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+
+.modal__inp {
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  
+  transition: border $transition;
+
+  .modal__label:focus-within &,
+  &:not(:placeholder-shown) {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.modal__input-cont {
+  position: relative;
+  display: block;
+}
+
+.modal__svg-cont {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.modal__svg {
+  fill: #212121;
+  width: 18px;
+  height: 18px;
+  
+
+  transition: fill $transition;
+
+  .modal__label:focus-within & {
+    fill: var(--accent-color);
+  }
+}
+
+
+
+
+
+
+.modal__checkbox {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  left: 13px;
+  top: 0;
+  padding-left: 26px;
+  @include font(18px, 400, 1.25);
+  color: var(--accent-color);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal__checkbox--hidden {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal__checkbox-icon {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 15px;
+  left: 0;
+  top: 4px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  
+  transition: transform $transition;
+
+  .modal__checkbox--hidden:checked + & {
+    border-color: transparent;
+    transform: scale(1);
+    background: var(--accent-color);
+    // background-image: url('../../images/hero/check-svg.svg');
+    background-origin: border-box;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .modal__checkbox--hidden:focus + & {
+    border-color: var(--accent-color);
+  }
+}
+
+
+
+.mobile-nav__btn-buy--red {
+  background-color: var(--accent-color);
+  color: var(--bg-color-white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
   }
 }
