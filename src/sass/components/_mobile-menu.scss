@@ -70,6 +70,11 @@
     right: 190px;
     top: 47px;
     background: #ffa5ba;
+
+    .header__menu-btn-cont.wind-open & {
+      right: 0;
+      top: 21px;
+    }
   }
 
   &:hover {
