@@ -69,6 +69,7 @@ $t: 0.5s;
   background-clip: padding-box;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
   opacity: 0;
+  border-radius: 6%;
   //  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   //transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -94,7 +95,7 @@ $t: 0.5s;
   //-ms-user-select: none;
 
   //-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  //transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0 37px;
 
   vertical-align: middle;
