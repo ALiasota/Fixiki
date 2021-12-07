@@ -1,77 +1,124 @@
-.reviews__container {
-    padding-bottom: 86px;
+.reviews {
+  padding-bottom: 86px;
 }
 
 .reviews__image {
-    display: inline-block;
+  display: inline-block;
 
-    margin-bottom: 29px;
+  margin: 0 auto;
 
-    width: 85px;
-    height: 85px;
+  margin-bottom: 29px;
+
+  width: 85px;
+  height: 85px;
 }
 
 .reviews__item {
-    position: relative;
-    text-align: center;
-
-    &::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 132px;
-        left: 20px;
-        width: 54px;
-        height: 40px;
-        background-image: url(/images/reviews/quote.png);
-    }
-    &::after {
-        content: " ";
-        position: absolute;
-        display: block;
-        top: 340px;
-        left: 150px;
-        width: 32px;
-        height: 4px;
-        background-image: url(/images/reviews/ellips-icon.png);
-        @media screen and (min-width: 768px) {
-            top: 250px;
-            left: 332px;
-        }
-        @media screen and (min-width: 1200px) {
-            top: 250px;
-            left: 488px;
-        }
-    }
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
+  position: relative;
+  text-align: center;
 }
-
-.reviews__wrapper {
-    background-color: #FAFAFA;
-    padding-top: 28px;
-    padding-left: 50px;
-    padding-right:50px ;
-    padding-bottom: 20px;
-    margin-bottom: 52px;
-}
-
 
 .reviews__text--underline {
-    position: relative;
-    @include font(12px, 500, 2.5);
-    background: linear-gradient(to right, #E1E1E1, #E1E1E1 100%);
-    background-position: 0 100%;
-    background-size: 10px 1px;
-    background-repeat: repeat-x;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  @include font(12px, 500, 2.5);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    hsla(0, 0%, 98%, 0.1),
+    hsla(0, 0%, 98%, 0.1) 29px,
+    hsla(0, 0%, 88.2%, 0.5) 20px,
+    hsla(0, 0%, 88.2%, 0.5) 30px
+  );
 
+  &::before {
+    content: ' ';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: -13px;
+    width: 54px;
+    height: 40px;
+    background-image: url(/images/reviews/quote.png);
+
+    @media screen and (min-width: 768px) {
+      left: -27px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 157px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    @include font(14px, 500, 2.2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+    @include font(16px, 500, 1.87);
+  }
+}
+.review__test--background {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: #fafafa;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 25px;
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+  }
+}
+.dots,
+.dots:before,
+.dots:after {
+  width: 4px;
+  height: 4px;
+  background: #c7133e;
+  border-radius: 50%;
+}
+.dots {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
 }
 
+.dots:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+}
+
+.dots:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+}
 
 .reviews__name {
-    display: inline-block;
+  display: inline-block;
+  @include font(14px, 500, 1.8);
+  text-align: center;
+
+  .reviews__author {
     @include font(14px, 500, 1.8);
     text-align: center;
-}
 
+    @media screen and (min-width: 768px) {
+      @include font(16px, 500, 1.8);
+    }
+    @media screen and (min-width: 1200px) {
+      @include font(20px, 500, 1.8);
+    }
+  }
+}

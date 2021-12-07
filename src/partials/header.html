@@ -70,11 +70,70 @@
         </picture>
       </div>
 
+      <div class="header__milk-cont">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="
+                    ./images/hero/milk-hero-deskt-webp.webp    1x,
+                    ./images/hero/milk-hero-deskt-webp@2x.webp 2x
+                  " type="image/webp" />
+      
+          <source media="(min-width: 1200px)" srcset="
+                    ./images/hero/milk-hero-deskt-png.png    1x,
+                    ./images/hero/milk-hero-deskt-png@2x.png 2x
+                  " />
+          <source media="(min-width: 768px)" srcset="
+                    ./images/hero/milk-hero-tablet-webp.webp    1x,
+                    ./images/hero/milk-hero-tablet-webp@2x.webp 2x
+                  " type="image/webp" />
+      
+          <source media="(min-width: 768px)" srcset="
+                    ./images/hero/milk-hero-tablet-png.png    1x,
+                    ./images/hero/milk-hero-tablet-png@2x.png 2x
+                  " />      
+          
+      
+          <img src="#" alt="milk" />
+        </picture>        
+      </div>
+      
+      <div class="header__tasty-cont">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="
+                          ./images/hero/tasty-hero-deskt-webp.webp    1x,
+                          ./images/hero/tasty-hero-deskt-webp@2x.webp 2x
+                        " type="image/webp" />
+      
+          <source media="(min-width: 1200px)" srcset="
+                          ./images/hero/tasty-hero-deskt-png.png    1x,
+                          ./images/hero/tasty-hero-deskt-png@2x.png 2x
+                        " />
+          <source media="(min-width: 768px)" srcset="
+                          ./images/hero/tasty-hero-tablet-webp.webp    1x,
+                          ./images/hero/tasty-hero-tablet-webp@2x.webp 2x
+                        " type="image/webp" />
+      
+          <source media="(min-width: 768px)" srcset="
+                          ./images/hero/tasty-hero-tablet-png.png    1x,
+                          ./images/hero/tasty-hero-tablet-png@2x.png 2x
+                        " />
+      
+      
+          <img src="#" alt="milk" />
+        </picture>
+      </div>
+
+      <div class="header__numbers-cont">
+        <p class="header__number">16</p>
+        <p class="header__number-text">cafes</p>
+        <p class="header__number">23</p>
+        <p class="header__number-text">fuud trucks</p>
+      </div>
+
       <nav>
         <div class="header__logo-cont">
           <picture>
             <source
-              media=""
+              
               srcset="
                 ./images/hero/logo-mobile-webp.webp    1x,
                 ./images/hero/logo-mobile-webp@2x.webp 2x
@@ -89,100 +148,46 @@
             <img class="header__logo" src="#" alt="LOGO" />
           </picture>
         </div>
-        <button  type="button" class="mobile-nav__btn-buy header__btn-buy">        
-          <a href="" data-modal="#modal1" class="modal__trigger mobile-nav__btn-link">
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link--red">Home</a>
+          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#made" class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
+        </ul>
+
+        <button data-modal-open  type="button" class="mobile-nav__btn-buy header__btn-buy">          
           Buy now
            <svg class="btn__icon-header" width="8" height="10">
              <use href="./images/sprite.svg#icon-arrow"></use>
-           </svg>
-         </a>        
+           </svg>                
         </button>
       </nav>
-
+      
       <h1 class="header__title">
         Ice cream made with <span class="header__title--bigger">passion</span>
       </h1>
-      <div>
-        <button class="header__btn header__btn--red" type="button"><a class="header__btn-link" href="#products">Products</a></button>
-        <button class="header__btn header__btn--white" type="button"><a class="header__btn-link" href="#made">How it’s made?</a></button>
+      <div class="header__btn-cont">
+        <a class="header__btn header__btn--red" href="#products">Products</a>
+        <a class="header__btn header__btn--white" href="#made">How it’s made?</a>
       </div>
+      <p id="card-container" data-card class="header__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <button 
+        aria-expanded="false"
+        aria-controls="card-container"        
+        type="button"
+        data-card-button class="header_link-svg">
+          <svg class="header__arrow-svg">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg> 
+        </button>    
+      
     </div>  
     
   </div>
   
-  <div id="modal1" class="modal modal__bg" role="dialog" aria-hidden="true">
-    <div class="modal__dialog">
-        <div class="modal__content">
-            <h3>Buy Isecream</h3>
-            <div class="wrapper__contentModal">
-            
-                <img src='./images/about/modalCow2.png' width="200" height="200" alt="cow&milk" class='modal-img'>
-                <div class="modal__window">
-                 
-                  <form autocomplete="off" class="modal__form">
-                      <label class="modal__label">Имя
-                          <span class="modal__input-cont">
-                              <span class="modal__svg-cont">
-                                  <svg class="modal__svg">
-                                      <use href="./images/sprite.svg#icon-name-svg"></use>
-                                  </svg>
-                              </span>
-                              <input 
-                              type="text" 
-                              class="modal__inp modal-border" 
-                              name="user-name"                             
-                              placeholder=" " 
-                              autofocus                        
-                              >
-                          </span>
-                          
-                      </label>    
-          
-                      <label class="modal__label">Телефон
-                          <span class="modal__input-cont">
-                              <span class="modal__svg-cont">
-                                  <svg class="modal__svg">
-                                      <use href="./images/sprite.svg#icon-tel-svg"></use>
-                                  </svg>
-                              </span>
-                              <input 
-                              type="tel" 
-                              class="modal__inp modal-border" name="tel"                                                     
-                              placeholder=" ">
-                          </span>
-                          
-                      </label>       
-          
-                      <label class="modal__checkbox">
-                          <input type="checkbox" class="modal__checkbox--hidden" name="agry">
-                          <span class="modal__checkbox-icon"></span>
-                          <span>Confirm</span>                          
-                      </label>
-          
-                      <button  type="submit" class="mobile-nav__btn-buy mobile-nav__btn-buy--red">     
-                        
-                          Buy now
-                           <svg class="btn__icon-header" width="8" height="10">
-                             <use href="./images/sprite.svg#icon-arrow"></use>
-                           </svg>
-                                
-                   </button>
-                   
-                  </form>                  
-              </div>
-            
-            
-            </div>
-
-            <!-- modal close button -->
-            <a href="" class="modal__close demo-close">
-                <svg class="" viewBox="0 0 24 24">
-                    <path
-                        d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
-                    <path d="M0 0h24v24h-24z" fill="none" />
-                </svg>
-            </a>
-          </div>
-      </div>
-  </div>
+  
 </header>

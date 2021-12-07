@@ -4,5 +4,33 @@ nav {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-bottom: 84px;
+  }
+}
+
+.nav__list {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  display: flex;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.nav__link {
+  @include font(16px, 600, 1.31);
+  color: var(--bg-color-white);
+
+  &.nav__link--red {
+    color: var(--accent-color);
   }
 }
