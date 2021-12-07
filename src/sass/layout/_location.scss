@@ -1,102 +1,100 @@
-.location-modal{
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transform: translateX(100vw);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 480px;
-    max-width: 100%;
-    height: 100vh;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    padding-top: 60px;
+.location-modal {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transform: translateX(100vw);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 480px;
+  max-width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding-top: 60px;
 
-    overflow-y: scroll;
-    background-color: #e17992;
-    transition: opacity $transition;
-    transition: transform $transition;
+  overflow-y: scroll;
+  background-color: #e17992;
+  transition: opacity $transition;
+  transition: transform $transition;
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-    &.is-open {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: initial;
-    }
-    
-    @media screen and (max-width: 767px) {
-        padding: 93px 15px;
-    }
-}   
-
-.location-modal__container{
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: var(--second-color);
+  &.is-open1 {
+    transform: translateX(0);
     opacity: 1;
-    transform: translate(-50%, -50%);
-    transition: opacity $transition, 
-    transform $transition;
+    visibility: visible;
+    pointer-events: initial;
+  }
 
-    .modal--is-hidden & {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.5, 0.5);
-    }
-
-    @media screen and (max-width: 1199px) {
-        max-width: 450px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 528px;
-    }
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
 }
 
-.location-modal__title{
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-color-text);
+.location-modal__container {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: var(--second-color);
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity $transition;
+  transition: transform $transition;
+
+  .modal--is-hidden & {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5, 0.5);
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
+.location-modal__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-color-text);
+}
 
 .location-modal__close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--second-color-text);
-    background-color: var(--bg-color-white);
-    transition: color $transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--second-color-text);
+  background-color: var(--bg-color-white);
+  transition: color $transition;
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.location-modal__icon{
-    fill: currentColor;
+.location-modal__icon {
+  fill: currentColor;
 }
