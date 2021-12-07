@@ -28,6 +28,9 @@ $t: 0.5s;
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+
   //-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   //-webkit-transition-delay: $modal-delay;
@@ -42,9 +45,10 @@ $t: 0.5s;
   // -ms-flex-align: start;
   align-items: flex-start;
 }**/
+/**
 .modal__bg {
   background: transparent;
-}
+}**/
 .modal__dialog {
   @media screen and(max-width:767px) {
     width: 480px;
