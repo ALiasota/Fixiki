@@ -1,43 +1,58 @@
 .mobile-nav {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 10;
+  position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(100vw);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 480px;
-  max-width: 100%;
+  width: 100vw;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  padding-top: 60px;
 
-  overflow-y: scroll;
-  background-color: #e17992;
   transition: opacity $transition;
-  transition: transform $transition;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
 
   &.is-open {
-    transform: translateX(0);
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
   }
 }
 
+.mobile-nav__window {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100vw);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 320px;
+  height: 100vh;
+
+  padding-top: 60px;
+
+  overflow: scroll;
+  background-color: #e17992;
+
+  transition: transform $transition;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  .mobile-nav.is-open & {
+    transform: translateX(0);
+  }
+}
 .mobile-nav__btn-buy {
   width: 186px;
   height: 44px;
@@ -168,7 +183,15 @@
   color: var(--bg-color-white);
   @include font(14px, 600, 1.29);
 
-  &.mobile-nav__link--red {
+  transition: color $transition;
+
+  &:focus,
+  &:hover {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: center;
   }
 }
