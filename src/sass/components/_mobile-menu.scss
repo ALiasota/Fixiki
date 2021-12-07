@@ -20,15 +20,18 @@
 }
 
 .mobile-nav__window {
-  position: absolute;
+  position: fixed;
+  margin: auto;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   transform: translateX(100vw);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 480px;
-  max-width: 100%;
+  width: 100vw;
+  max-width: 320px;
   height: 100vh;
 
   padding-top: 60px;
@@ -39,7 +42,7 @@
   transition: transform $transition;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -180,7 +183,15 @@
   color: var(--bg-color-white);
   @include font(14px, 600, 1.29);
 
-  &.mobile-nav__link--red {
+  transition: color $transition;
+
+  &:focus,
+  &:hover {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: center;
   }
 }
