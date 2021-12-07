@@ -32,7 +32,7 @@ $t: 0.5s;
   background: rgba(0, 0, 0, 0.7);
 
   //-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  //transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   //-webkit-transition-delay: $modal-delay;
   //transition-delay: $modal-delay;
 }
@@ -53,7 +53,7 @@ $t: 0.5s;
   @media screen and(max-width:767px) {
     width: 480px;
     max-width: 100%;
-    height: 100vh;
+    //height: 100vh;
   }
 
   @media screen and (min-width: 768px) {
@@ -70,7 +70,7 @@ $t: 0.5s;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
   opacity: 0;
   //  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  //transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .modal__content--active {
   opacity: 1;
@@ -94,7 +94,7 @@ $t: 0.5s;
   //-ms-user-select: none;
 
   //-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  //transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0 37px;
 
   vertical-align: middle;

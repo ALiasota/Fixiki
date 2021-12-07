@@ -2,12 +2,15 @@
   background-color: var(--bg-color-pink);
   //position: relative;
   padding-top: 125px;
+}
 
+.bgMilk {
   @media screen and (min-width: 1200px) {
     background-image: url('../images/about/about1200.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 130%;
+    max-width: 1600px;
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
