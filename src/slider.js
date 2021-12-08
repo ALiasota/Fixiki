@@ -3,7 +3,7 @@ $('.slider-list').slick({
   slidesToScroll: 1,
   autoplay: true,
   arrows:true,
-  autoplaySpeed: 20000,
+  autoplaySpeed: 2000,
   dots:true,
   dotsClass:'slider__dots',
   appendDots:$('.slider-dots__wrap'),
