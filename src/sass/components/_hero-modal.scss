@@ -6,13 +6,14 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
+  visibility: visible;
   overflow-y: scroll;
-  transition: opacity $transition;
+
+  transition: visibility $transition;
 
   &.is-hidden {
-    transition: opacity $transition;
-    opacity: 0;
+    transition: visibility $transition;
+    visibility: hidden;
     pointer-events: none;
   }
 }
@@ -33,9 +34,10 @@
   width: 100%;
   height: 570px;
 
-  .modal__backdrop.is-hidden & {
+  .is-hidden & {
     transition: transform $transition;
     transform: scale(0);
+    transform: rotate(0.5turn);
   }
 
   .modal__backdrop & .modal-img {
