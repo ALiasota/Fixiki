@@ -24,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   @media screen and (min-width: 1200px){
+     padding-left: 75px;
+     padding-right: 75px;
+    };
 }
 .products__label {display: block;
  text-align: center;
@@ -324,6 +328,9 @@ letter-spacing: 0.04em;
   border-radius: 20px;
   background-color: var(--bg-color-white);
   cursor: pointer;
+  &:hover{
+  background-color: #ECEBEB;
+}
 
 
 }
@@ -331,6 +338,8 @@ letter-spacing: 0.04em;
   width: 15px;
   height: 40px;
 fill: var(--accent-color);
+
+
 }
 
 
@@ -408,7 +417,7 @@ display: block;
     top: 0;
     left: 0;
     opacity: 1;
-     transition: opacity 500ms linear;
+     transition: opacity 500ms linear, visibility 500ms linear;
 
 }
 
