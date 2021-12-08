@@ -1,12 +1,12 @@
-<div data-location id="location" class="location-modal">
+<div data-location  class="location-modal is-opened" >
     <div class="location-modal__container">
         <h1 class="location-modal__title">Our locations</h1>
-        <h2>Cafe</h2>
-        <div>
-            <p>Chicago</p>
+        <h2 class="location-modal__name">Cafe</h2>
+        <div class="location-modal__content">
+            <p class="city">Chicago</p>
             <ul class="location-modal__list">
                 <li class="location-modal__item">
-                    <a href="https://www.google.com.ua/maps/@41.8784684,-87.6284792,18.85z?hl=ru" class="location-modal__link">
+                    <a target="blank" href="https://www.google.com.ua/maps/@41.8784684,-87.6284792,18.85z?hl=ru" class="location-modal__link">
                         230 S State St, Chicago, IL 60604,
                     </a>
                 </li>
@@ -14,22 +14,18 @@
                     <p class="location-modal__contacts">Contats</p>
                 </li>
                 <li class="location-modal__item">
-                    <a href="+610383766284" class="location-modal__info">
-                        +61(0) 383 766 284
-                    </a>
-                </li>
-                <li>
-                    <a href="noreply@envato.com" class="location-modal__info">
-                        noreply@envato.com
-                    </a>
+                    <address class="contacts__wrapper location-modal__info">
+                        <a class="contacts__link position__contact" href="tel:+610-383-766-284"> +61(0) 383 766 284 </a>
+                        <a class="contacts__link position__contact" target="blank" href="mailito:noreply@envato.com"> noreply@envato.com</a>
+                    </address>
                 </li>
             </ul>
         </div>
-        <div>
-            <p>New York</p>
+        <div class="location-modal__content">
+            <p class="city">New York</p>
             <ul class="location-modal__list">
                 <li class="location-modal__item">
-                    <a href="https://inlnk.ru/8429o" class="location-modal__link">
+                    <a href="https://inlnk.ru/8429o" target="blank" class="location-modal__link">
                         181 E 73rd St, New York, NY 10021,
                     </a>
                 </li>
@@ -37,46 +33,36 @@
                     <p class="location-modal__contacts">Contats</p>
                 </li>
                 <li class="location-modal__item">
-                    <a href="+610383766284" class="location-modal__info">
-                        +61(0) 383 766 284
-                    </a>
-                </li>
-                <li>
-                    <a href="noreply@envato.com" class="location-modal__info">
-                        noreply@envato.com
-                    </a>
+                        <address class="contacts__wrapper location-modal__info">
+                            <a class="contacts__link position__contact position__contact" href="tel:+610-383-766-284"> +61(0) 383 766 284 </a>
+                            <a class="contacts__link position__contact position__contact" target="blank" href="mailito:noreply@envato.com"> noreply@envato.com</a>
+                        </address>
                 </li>
             </ul>
         </div>
-        <h2>Food truck</h2>
-        <div>
-            <p>Los Angeles</p>
+        <h2 class="location-modal__name-second">Food truck</h2>
+        <div class="location-modal__content">
+            <p class="city">Los Angeles</p>
             <ul class="location-modal__list">
                 <li class="location-modal__item">
-                    <a href="https://goo.su/9m6m" class="location-modal__link">
+                    <a href="https://goo.su/9m6m" target="blank" class="location-modal__link">
                         1985-1995 W Adams Blvd, Los Angeles, CA 90018,
                     </a>
                 </li>
-                <li class="location-modal__item">
+                <li class="location-modal__item position">
                     <p class="location-modal__contacts">Contats</p>
                 </li>
                 <li class="location-modal__item">
-                    <a href="+610383766284" class="location-modal__info">
-                        +61(0) 383 766 284
-                    </a>
-                </li>
-                <li>
-                    <a href="noreply@envato.com" class="location-modal__info">
-                        noreply@envato.com
-                    </a>
+                    <address class="contacts__wrapper location-modal__info">
+                        <a class="contacts__link position__contact" href="tel:+610-383-766-284"> +61(0) 383 766 284 </a>
+                        <a class="contacts__link  position__contact position__contact" target="blank" href="mailito:noreply@envato.com"> noreply@envato.com</a>
+                    </address>
                 </li>
             </ul>
         </div>
-        <a href="#" class="location-modal__close" data-close-button>
-            <svg class="location-modal__icon" viewBox="0 0 24 24">
-                <path
-                    d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
-                <path d="M0 0h24v24h-24z" fill="none" />
+        <a href="#" class="location-modal__close" location-close-button>
+            <svg class="location-modal__icon">
+                <use href="./images/sprite.svg#icon-close"></use>>
             </svg>
         </a>
     </div>

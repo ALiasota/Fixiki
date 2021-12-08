@@ -1,0 +1,31 @@
+.back_to_top {
+  position: fixed;
+  bottom: 5%;
+  right: 40px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+
+  background: var(--accent-color);
+  color: #444;
+  cursor: pointer;
+  border-radius: 50%;
+
+  display: none;
+  fill: white;
+}
+
+.back_to_top:hover {
+  background: var(--second-color);
+}
+
+.back_to_top-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_to_top {
+  width: 20px;
+  height: 20px;
+}
