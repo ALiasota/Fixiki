@@ -109,10 +109,14 @@
   display: inline-block;
   @include font(14px, 500, 1.8);
   text-align: center;
+}
 
-  .reviews__author {
-    @include font(14px, 500, 1.8);
+.reviews__author {
+
+    margin-bottom: 35px;
     text-align: center;
+
+    @include font(14px, 500, 1.8);
 
     @media screen and (min-width: 768px) {
       @include font(16px, 500, 1.8);
@@ -121,4 +125,49 @@
       @include font(20px, 500, 1.8);
     }
   }
+
+.reviews__author{
+  margin-bottom: 35px;
 }
+
+.slider-dots__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.slider__dots{
+  display: flex;
+}
+
+.slider__dots >li {
+
+
+  border-radius: 50%;
+  background-color: #D9D9D9;
+
+  width: 12px;
+  height: 12px;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.slider__dots button {
+
+  cursor: pointer;
+  font-size: 0;
+}
+/*. slick-active {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-style: none;
+  border-radius: 0;
+  background-image: url(/images/reviews/home.svg);
+}
+ */
