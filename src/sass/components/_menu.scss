@@ -27,6 +27,8 @@ nav {
 }
 
 .nav__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
   @include font(16px, 600, 1.31);
   color: var(--bg-color-white);
 

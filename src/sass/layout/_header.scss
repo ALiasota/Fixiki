@@ -27,10 +27,16 @@
 
 .header__cont-rel {
   position: relative;
+
   max-width: 100%;
   z-index: 10;
   height: 502px;
   padding-top: 6px;
+
+  @media screen and (max-width: 300px) {
+    // right: -7px;
+    overflow-x: hidden;
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
@@ -89,11 +95,11 @@
   animation-timing-function: linear;
   animation-direction: normal;
 
-  @media screen and (max-width: 381px) {
+  @media screen and (max-width: 387px) {
     left: 97px;
   }
 
-  @media screen and (min-width: 382px) and (max-width: 767px) {
+  @media screen and (min-width: 388px) and (max-width: 767px) {
     right: 82px;
   }
 
