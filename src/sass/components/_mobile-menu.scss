@@ -6,15 +6,13 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 10;
-  // opacity: 0;
+
   visibility: hidden;
   pointer-events: none;
 
-  // transition: opacity $transition;
   transition: visibility $transition;
 
   &.is-open {
-    // opacity: 1;
     visibility: visible;
     pointer-events: initial;
   }
@@ -88,7 +86,7 @@
 .mobile-nav__menu-btn {
   position: absolute;
   z-index: 20;
-  right: 0;
+  right: 10px;
   top: 21px;
   background: #ffb8ca;
 
