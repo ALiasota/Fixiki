@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 100vw;
-  // max-width: 320px;
+  // max-width: 480px;
   height: 100vh;
 
   padding-top: 60px;
@@ -171,6 +171,7 @@
 }
 
 .mobile-nav__item {
+  padding: 13px 0 13px 21px;
   border-top: 1px solid #e18298;
   &:last-child {
     border-bottom: 1px solid #e18298;
@@ -178,7 +179,6 @@
 }
 
 .mobile-nav__link {
-  padding: 13px 0 13px 21px;
   color: var(--bg-color-white);
   @include font(14px, 600, 1.29);
 
