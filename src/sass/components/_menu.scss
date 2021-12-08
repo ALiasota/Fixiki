@@ -30,6 +30,10 @@ nav {
   @include font(16px, 600, 1.31);
   color: var(--bg-color-white);
 
+  &.link--red {
+    color: var(--accent-color);
+  }
+
   transition: color $transition;
   &:focus,
   &:hover {

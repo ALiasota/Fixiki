@@ -36,3 +36,14 @@
   
 })();
 
+$(document).ready(function(){
+  $("#menu-container").on("click", "a", function (event) {
+    document.getElementById('menu-container').classList.toggle('is-open');
+    document.getElementById('header-btn-cont').classList.toggle('wind-open');
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 300);
+    });
+});
+
