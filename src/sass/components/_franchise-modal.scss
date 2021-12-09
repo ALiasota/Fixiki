@@ -30,13 +30,6 @@
   padding: 40px;
   border-radius: 40px;
   transition: transform $transition;
-  // @media screen and(min-width: 480px) {
-  //   min-width: 450px;
-
-  // }
-  //   @media screen and(min-width: 1200px) {
-  //     max-width: 528px;
-  //   }
 }
 .franchise-modal__title {
   display: block;
@@ -60,7 +53,7 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 42px;
+  padding-left: 10px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
