@@ -12,6 +12,8 @@
   width: 85px;
   height: 85px;
 }
+.reviews_list {
+}
 
 .reviews__item {
   position: relative;
@@ -109,16 +111,115 @@
   display: inline-block;
   @include font(14px, 500, 1.8);
   text-align: center;
+}
 
-  .reviews__author {
-    @include font(14px, 500, 1.8);
-    text-align: center;
+.reviews__author {
+  margin-bottom: 35px;
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-      @include font(16px, 500, 1.8);
-    }
-    @media screen and (min-width: 1200px) {
-      @include font(20px, 500, 1.8);
-    }
+  @include font(14px, 500, 1.8);
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 500, 1.8);
   }
+  @media screen and (min-width: 1200px) {
+    @include font(20px, 500, 1.8);
+  }
+}
+
+.reviews__author {
+  margin-bottom: 35px;
+}
+
+// .slider-dots__wrap {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   width: 100%;
+// }
+
+// .slider__dots {
+//   display: flex;
+// }
+
+// .slider__dots > li {
+//   border-radius: 50%;
+//   background-color: #d9d9d9;
+
+//   width: 12px;
+//   height: 12px;
+
+//   &:not(:last-child) {
+//     margin-right: 18px;
+//   }
+// }
+
+// .slider__dots .slick-active button::after {
+//   background-color: green;
+// }
+
+// .slider__dots button {
+
+//   cursor: pointer;
+//   font-size: 0;
+// }
+/*. slick-active {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-style: none;
+  border-radius: 0;
+  background-image: url(/images/reviews/home.svg);
+}
+ */
+
+.slider-dots__wrap {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.slider__dots {
+  display: flex;
+  list-style: none;
+  @media screen and (min-width: 1200px) {
+    margin-left: -45px;
+  }
+}
+
+.slider__dots li {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.slider__dots li button {
+  cursor: pointer;
+  font-size: 0px;
+  background-color: unset;
+  border: none;
+}
+.slider__dots li button::after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+.slider__dots .slick-active button::after {
+  background-image: url('../images/reviews/home.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  background-color: transparent;
+  width: 16px;
+  height: 14px;
+}
+.slider__dots li button::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
 }

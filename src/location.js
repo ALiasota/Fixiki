@@ -1,15 +1,15 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-open-button]");
-  const mobileMenuRef = document.querySelector("[data-close-button]");
-  const mobileMenuWind = document.querySelector("[data-location]");
-  menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  const refs = {
+    locationBtnRef: document.querySelector("[data-open-location]"),
+    locationCloseRef: document.querySelector("[location-close-button]"),
+    locationWind: document.querySelector("[data-location]")
+  }
 
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+  refs.locationBtnRef.addEventListener('click', toggleLocation); 
+  refs.locationCloseRef.addEventListener('click', toggleLocation);
 
-    mobileMenuRef.classList.toggle("is-open");
-    mobileMenuWind.classList.toggle("location-open");
-  });
+  function toggleLocation() {
+    refs.locationWind.classList.toggle('is-opened');
+}
 })();
+

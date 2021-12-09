@@ -9,10 +9,6 @@
         padding-bottom: 18px;
     }
 
-    // @media screen and (min-width: 1200px) {
-    //     padding-left: 80px;
-    //     padding-right: 82px;
-    // }
 }
 
 .footer__container{
@@ -147,6 +143,7 @@
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        padding-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {

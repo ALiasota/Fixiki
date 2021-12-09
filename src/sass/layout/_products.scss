@@ -24,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   @media screen and (min-width: 1200px){
+     padding-left: 75px;
+     padding-right: 75px;
+    };
 }
 .products__label {display: block;
  text-align: center;
@@ -60,7 +64,7 @@
 
 .products__item {
   width: 280px;
-  height: 485px;
+  // height: 485px;
   border-radius: 24px;
 align-items: center;
    text-align: center;
@@ -68,20 +72,23 @@ align-items: center;
    padding-left: 41px;
    padding-right: 39px;
 padding-top: 161px;
+padding-bottom: 41px;
 @media screen and (min-width: 768px){
    width: 220px;
    padding-left: 11px;
    padding-right: 11px;
    padding-top: 152px;
+   padding-bottom: 40px;
 };
 
 @media screen and (min-width: 1200px){
     width: 330px;
-    height: 525px;
+    // height: 525px;
    padding-left: 44px;
    padding-right: 44px;
    padding-top: 163px;
-};
+    padding-bottom: 50px;
+}
 
 }
 .products__item--pink{
@@ -129,7 +136,9 @@ color: var(--bg-color-white);
 &::before{
   position: absolute;
 bottom: 45px;
-  right: -23px;
+  // right: -23px;
+   left: 50%;
+  transform: translatex(-50%);
     content: '';
    display: block;
     width: 249px;
@@ -139,7 +148,7 @@ bottom: 45px;
     background-image: url("../images/prod/prodm1.png");
 @media screen and (min-width: 768px){
  bottom: 53px;
-  right: -11px;
+  // right: -11px;
   width: 220px;
     height: 226px;
      background-image: url("../images/prod/prodt1.png");
@@ -153,7 +162,7 @@ bottom: 45px;
   width: 335px;
     height: 335px;
      bottom: 72px;
-  right: -46px;
+  // right: -46px;
      background-image: url("../images/prod/prodd1.png");
      @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -182,7 +191,9 @@ bottom: -30px;
 &::before{
   position: absolute;
   bottom: 45px;
-  right: -23px;
+  left: 50%;
+  transform: translatex(-50%);
+  // right: -23px;
     content: '';
    display: block;
     width: 249px;
@@ -194,7 +205,7 @@ bottom: -30px;
   width: 220px;
     height: 226px;
     bottom: 53px;
-  right: -11px;
+  // right: -11px;
      background-image: url("../images/prod/prodt2.png");
      @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -206,7 +217,7 @@ bottom: -30px;
   width: 335px;
     height: 335px;
        bottom: 72px;
-  right: -46px;
+  // right: -46px;
      background-image: url("../images/prod/prodd2.png");
      @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -218,7 +229,8 @@ bottom: -30px;
 }
 &::after{
   position: absolute;
-   right: 87px;
+  left: 50%;
+  transform: translatex(-50%);
 bottom: -30px;
    content: '';
    display: block;
@@ -237,7 +249,9 @@ bottom: -30px;
 &::before{
   position: absolute;
  bottom: 45px;
-  right: -23px;
+  left: 50%;
+  transform: translatex(-50%);
+  // right: -23px;
     content: '';
    display: block;
     width: 249px;
@@ -249,7 +263,7 @@ bottom: -30px;
   width: 220px;
     height: 226px;
     bottom: 53px;
-  right: -11px;
+  // right: -11px;
      background-image: url("../images/prod/prodt3.png");
      @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -259,7 +273,7 @@ bottom: -30px;
 
 @media screen and (min-width: 1200px){
      bottom: 72px;
-  right: -46px;
+  // right: -46px;
   width: 335px;
     height: 335px;
      background-image: url("../images/prod/prodd3.png");
@@ -317,6 +331,8 @@ letter-spacing: 0.04em;
   border-radius: 20px;
   background-color: var(--bg-color-white);
   cursor: pointer;
+  &:hover{
+  background-color: #ECEBEB;}
 
 
 }
@@ -324,6 +340,8 @@ letter-spacing: 0.04em;
   width: 15px;
   height: 40px;
 fill: var(--accent-color);
+
+
 }
 
 
@@ -396,14 +414,19 @@ display: block;
 
 }}
 
-.backdrop{
+.products__backdrop{
    position: absolute;
     top: 0;
     left: 0;
+    opacity: 1;
+     transition: opacity 500ms linear, visibility 500ms linear;
+
 }
 
 .hiddeng{
+  opacity: 0;
   visibility: hidden;
+
 }
 .products-detals__container--cream{  width: 280px;
   height: 301px;
@@ -428,6 +451,7 @@ overflow: hidden;
 }
 }
 .hiddenc{
+   opacity: 0;
   visibility: hidden;
 }
 
@@ -454,5 +478,6 @@ overflow: hidden;
 }
 }
 .hiddenp{
+   opacity: 0;
   visibility: hidden;
 }

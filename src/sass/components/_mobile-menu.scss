@@ -1,43 +1,57 @@
 .mobile-nav {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 10;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: visibility $transition;
+
+  &.is-open {
+    visibility: visible;
+    pointer-events: initial;
+  }
+}
+
+.mobile-nav__window {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+
+  right: 0;
   transform: translateX(100vw);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 480px;
-  max-width: 100%;
+  width: 100vw;
+  // max-width: 480px;
   height: 100vh;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+
   padding-top: 60px;
 
-  overflow-y: scroll;
+  overflow: scroll;
   background-color: #e17992;
-  transition: opacity $transition;
+
   transition: transform $transition;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
     display: none;
   }
 
-  &.is-open {
+  .mobile-nav.is-open & {
     transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
   }
 }
-
 .mobile-nav__btn-buy {
   width: 186px;
   height: 44px;
@@ -57,7 +71,7 @@
 
 .header__menu-btn-cont {
   position: relative;
-  max-width: 480px;
+  max-width: 100%;
   z-index: 11;
 
   @media screen and (min-width: 768px) {
@@ -72,7 +86,7 @@
 .mobile-nav__menu-btn {
   position: absolute;
   z-index: 20;
-  right: 0;
+  right: 10px;
   top: 21px;
   background: #ffb8ca;
 
@@ -168,7 +182,19 @@
   color: var(--bg-color-white);
   @include font(14px, 600, 1.29);
 
-  &.mobile-nav__link--red {
+  transition: color $transition;
+
+  &.link--red {
     color: var(--accent-color);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: center;
   }
 }
