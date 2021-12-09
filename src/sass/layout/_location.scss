@@ -9,14 +9,11 @@
   opacity: 1;
   overflow-y: scroll;
   transition: opacity $transition;
-  
-  
-  
+
   &.is-opened {
     opacity: 0;
     pointer-events: none;
   }
-  
 }
 
 .location-modal__container {
@@ -52,16 +49,14 @@
   color: var(--accent-color);
 }
 
-.location-modal__item{
+.location-modal__item {
   display: flex;
   flex-direction: column;
 }
 
-
-.location-modal__content{
-  
+.location-modal__content {
   @media screen and (min-width: 768px) {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -70,13 +65,13 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  cursor: pointer;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: none;
-  cursor: pointer;
   color: var(--second-color-text);
   transition: color $transition;
 
@@ -90,9 +85,8 @@
   fill: currentColor;
 }
 
-
-.location-modal__name{
-  background: #F0D1A5;
+.location-modal__name {
+  background: #f0d1a5;
   border-radius: 6px;
 
   font-family: DM Sans;
@@ -110,7 +104,7 @@
   margin-bottom: 15px;
 }
 
-.location-modal__name-second{
+.location-modal__name-second {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 16px;
@@ -123,14 +117,14 @@
   text-transform: uppercase;
   color: var(--bg-color-white);
 
-  background: #C2E297;
+  background: #c2e297;
   border-radius: 6px;
   max-width: 138px;
   margin-bottom: 15px;
   margin-top: 10px;
 }
 
-.city{
+.city {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -139,7 +133,7 @@
   letter-spacing: 0.04em;
 }
 
-.location-modal__link{
+.location-modal__link {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
@@ -147,7 +141,7 @@
   color: var(--accent-color);
 }
 
-.location-modal__contacts{
+.location-modal__contacts {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 16px;
@@ -156,13 +150,12 @@
   color: var(--first-color-text);
 }
 
-.location-modal__info{
+.location-modal__info {
   display: flex;
   flex-direction: row;
 }
 
-.position__contact:not(:last-child){
-    margin-right: 10px;
-  }
-
+.position__contact:not(:last-child) {
+  margin-right: 10px;
+}
 
